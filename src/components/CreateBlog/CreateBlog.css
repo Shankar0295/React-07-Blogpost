@@ -1,0 +1,35 @@
+
+
+.container{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.blog-header{
+    display: block;
+    margin-bottom: 10px;
+    color: #585858;
+    font-weight: bold
+}
+input{
+    outline: none;
+}
+.blog-input{
+    margin-bottom: 20px;
+    padding: 10px;
+    font-size: 18px;
+    width: 90%;
+}
+.blog-text{
+    height: 140px;
+}
+.create-btn{
+    padding: 10px 30px;
+    border-radius: 5px;
+    border: 1px solid transparent;
+    background-color: #1e2135;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 18px;
+    cursor: pointer;
+}

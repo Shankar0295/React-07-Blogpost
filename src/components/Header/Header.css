@@ -8,7 +8,7 @@
       cursor: pointer;
   }
   .portfolio-link, .title{
-    color: #fefeff;
+    /* color: #fefeff; */
     font-weight: bold;
   }
   
