@@ -1,21 +1,27 @@
-import React, { useState } from 'react'
+import React, { useState, useRef, useEffect } from 'react'
 import { getDatabase, ref, get, child } from "firebase/database";
 import './BlogHome.css';
 import { Link } from 'react-router-dom'
 import { FaArrowRight } from "react-icons/fa";
 import Loading from '../Loading/Loading'
 
-// import heroImg from '../../images/cover-img.jpeg'    
 const BlogHome = () => {
     const [data, setData] = useState([]);// for data
     const [dataloading, setLoading] = useState(true)// for loading
     const [style, setStyle] = useState({ display: 'none' });// for readmore button styling
     const [editIndex, setEditIndex] = useState(null);// for readmore button hide and show
+    // added for memory leak but not working
+    const mounted = useRef(false);
+    useEffect(() => {
+        mounted.current = true;
 
-
-
+        return () => {
+            mounted.current = false;
+        };
+    }, []);
+    // added for memory leak but not working
+    // if(dataloading && mounted) // added for memory leak but not working
     if (dataloading) {
-
         const dbRef = ref(getDatabase());
         get(child(dbRef, `/blogpost`)).then((snapshot) => {
             if (snapshot.exists()) {

@@ -6,7 +6,7 @@
 
 .des-text{
     white-space: pre-wrap;
-    text-align: justify;
+    text-align: left;
     line-height: 30px;
     font-size: 18px;
 }
@@ -26,4 +26,5 @@
         font-size: 18px;
         margin-top: 20px;
         border-radius: 10px;
+        cursor: pointer;
 }

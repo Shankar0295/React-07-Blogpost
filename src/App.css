@@ -1,5 +1,9 @@
+.app{
+    position: relative;
+    min-height: 100vh
+}
 
-   
+/* responsive */
 @media (min-width: 320px) and (max-width: 767px){
     .blog-container {
         grid-template-columns: repeat(1, 1fr);
@@ -7,13 +11,16 @@
     .blog-link{
         word-break : break-word;
     }
-    .des-text{
-        text-align: left;
-    }
 }
 
 @media (min-width: 768px) and (max-width: 1024px){
     .blog-container {
         grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1920px) and (max-width:  2560px){
+    .blog-container {
+        grid-template-columns: repeat(4, 1fr);
     }
 }
