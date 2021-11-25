@@ -1,12 +1,21 @@
 import React, { useState } from 'react'
 import { getDatabase, ref, get, child } from "firebase/database";
 import './BlogHome.css';
+import { Link } from 'react-router-dom'
+import { FaArrowRight } from "react-icons/fa";
+import Loading from '../Loading/Loading'
+
 // import heroImg from '../../images/cover-img.jpeg'    
 const BlogHome = () => {
-    const [data, setData] = useState([]);
-    const [loading, setLoading] = useState(true)
+    const [data, setData] = useState([]);// for data
+    const [dataloading, setLoading] = useState(true)// for loading
+    const [style, setStyle] = useState({ display: 'none' });// for readmore button styling
+    const [editIndex, setEditIndex] = useState(null);// for readmore button hide and show
 
-    if (loading) {
+
+
+    if (dataloading) {
+
         const dbRef = ref(getDatabase());
         get(child(dbRef, `/blogpost`)).then((snapshot) => {
             if (snapshot.exists()) {
@@ -18,7 +27,6 @@ const BlogHome = () => {
                 console.log(JsonArr)
                 setData(JsonArr)
                 setLoading(false)
-
             } else {
                 console.log("No data available");
             }
@@ -26,27 +34,41 @@ const BlogHome = () => {
             console.error(error);
         });
     }
-    return (
-        <div>
-            {/* <img src={heroImg} alt="cover"></img> */}
-            {
-                data.map((item) => {
-                    return (
-                        <div className="home-container" key={item.slug}>
-                            <div className="image-container">
-                                <img className="home-image" src={item.imageUrl} alt={item.imageName} />
-                            </div>
-                            <div className="text-container">
-                                <h1>{item.title}</h1>
-                                <p>{item.content.slice(0, 60)}...<span>Read More</span></p>
-                                <p className="text"><em>{item.timeDisplay}</em></p>
-                                <p className="text"><em>Created by {item.author}</em></p>
-                            </div>
-                        </div>
-                    )
-                })
-            }
 
+    if (dataloading) {
+        return (
+            <Loading />
+        )
+    }
+
+    return (
+        <div className="home-container">
+            <div className="blog-container ">
+                {
+                    data.map((item, index) => {
+                        return (
+                            <Link className="read-link" key={item.slug} to={{ pathname: `${item.slug}`, state: { ...item } }} onMouseEnter={e => { setEditIndex(index) }} onMouseLeave={e => { setStyle({ display: 'none' }) }}>
+                                <div onMouseEnter={e => { setStyle({ display: 'block' }); }}>
+                                    <div className="image-container">
+                                        <img className="home-image" src={item.imageUrl} alt={item.imageName} />
+                                    </div>
+                                    <div className="text-container">
+                                        <h2 className="text-title">{item.title}</h2>
+                                        <p className="created-text"><em>{item.timeDisplay}</em></p>
+                                        <p className="created-text"><em>Created by {item.author}</em></p>
+                                        {editIndex === index ? <div className="read-more">
+                                            <p className="read-padding" style={style}>Read More</p>
+                                            <p style={style}><FaArrowRight /></p>
+                                        </div> : null}
+                                    </div>
+                                </div>
+                            </Link>
+
+                        )
+                    })
+                }
+
+            </div>
         </div>
     )
 }

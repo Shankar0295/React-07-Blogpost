@@ -1,0 +1,29 @@
+.des-container{
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.des-text{
+    white-space: pre-wrap;
+    text-align: justify;
+    line-height: 30px;
+    font-size: 18px;
+}
+
+.goBack{
+    color: inherit;
+}
+.des-time{
+    font-size: 15px;
+}
+
+.top-btn{
+    padding: 10px 20px;
+        background: #222222;
+        color: white;
+        border: 0;
+        font-size: 18px;
+        margin-top: 20px;
+        border-radius: 10px;
+}
