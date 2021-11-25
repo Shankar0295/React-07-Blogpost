@@ -63,7 +63,8 @@ const BlogDescription = (props) => {
                 )
             })}
             <div style={{ textAlign: "right" }}>
-                <button onClick={scrollToTop} className="top-btn" style={{ display: visible ? 'inline' : 'none' }}>Go to Top</button></div>
+                <button onClick={scrollToTop} className="top-btn" style={{ display: visible ? 'inline' : 'none' }}>Go to Top</button>
+            </div>
         </div>
     )
 }
