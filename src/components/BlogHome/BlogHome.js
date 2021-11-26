@@ -3,7 +3,8 @@ import { getDatabase, ref, get, child } from "firebase/database";
 import './BlogHome.css';
 import { Link } from 'react-router-dom'
 import { FaArrowRight } from "react-icons/fa";
-import Loading from '../Loading/Loading'
+import Loading from '../Loading/Loading';
+import Footer from '../Footer/Footer';
 
 const BlogHome = () => {
     const [data, setData] = useState([]);// for data
@@ -75,6 +76,7 @@ const BlogHome = () => {
                 }
 
             </div>
+            <Footer />
         </div>
     )
 }

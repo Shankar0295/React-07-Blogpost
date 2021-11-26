@@ -2,7 +2,9 @@ import React from 'react';
 import { useAuth0 } from '@auth0/auth0-react';
 import app from '../../providers/FireBase'
 import { getDatabase, ref, set } from "firebase/database";
-import './CreateBlog.css'
+import './CreateBlog.css';
+import Footer from '../Footer/Footer';
+import LogOut from '../LogOut/LogOut';
 
 const CreateBlog = () => {
     const { user } = useAuth0();
@@ -70,6 +72,7 @@ const CreateBlog = () => {
 
     return (
         <div className="container">
+            <LogOut />
             <h2>Share your blog here..</h2>
             <form name="createBlogForm" onSubmit={handleSubmit}>
                 <div>
@@ -104,6 +107,7 @@ const CreateBlog = () => {
                     <button type="submit" className="create-btn">Create</button>
                 </div>
             </form>
+            <Footer />
         </div>
     )
 }

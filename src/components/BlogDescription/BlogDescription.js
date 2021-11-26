@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import './BlogDescription.css'
 import { Link } from 'react-router-dom'
+import Footer from '../Footer/Footer';
 
 const BlogDescription = (props) => {
 
@@ -44,6 +45,7 @@ const BlogDescription = (props) => {
             <div style={{ textAlign: "right" }}>
                 <button onClick={scrollToTop} className="top-btn" style={{ display: visible ? 'inline' : 'none' }}>Go to Top</button>
             </div>
+            <Footer />
         </div>
     )
 }

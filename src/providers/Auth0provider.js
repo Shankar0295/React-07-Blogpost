@@ -10,7 +10,7 @@ const Auth0ProviderLogin = ({ children }) => {
     const history = useHistory();
 
     const onRedirectCallback = appState => {// eslint-disable-next-line
-        history.push(appState ?.returnTo || window.location.pathname);
+        history.push(appState && appState.returnTo ? appState.returnTo : window.location.pathname);
     };
 
     return (
