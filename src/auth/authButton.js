@@ -1,5 +1,5 @@
+// component not used
 import React from 'react';
-
 import Login from '../components/Login/Login';
 import LogOut from '../components/LogOut/LogOut';
 
