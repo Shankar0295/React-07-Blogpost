@@ -2,7 +2,7 @@ import { initializeApp } from 'firebase/app';
 
 
 const FireBaseConfig = {
-    apiKey: "AIzaSyBbeBU94K1q4R5vCDv8wu8Lf7MKPzi4-Hc",
+    apiKey: process.env.FIRE_BASE_KEY,
     authDomain: "blogscope-a7010.firebaseapp.com",
     databaseURL: "https://blogscope-a7010-default-rtdb.firebaseio.com",
     projectId: "blogscope-a7010",
