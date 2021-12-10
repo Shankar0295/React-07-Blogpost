@@ -62,11 +62,13 @@ const BlogHome = () => {
                                     <div className="text-container">
                                         <h2 className="text-title">{item.title}</h2>
                                         <p className="created-text"><em>{item.timeDisplay}</em></p>
-                                        <p className="created-text"><em>Created by {item.author}</em></p>
-                                        {editIndex === index ? <div className="read-more">
+                                        <div className="created-text"><em className="created-author">Created by {item.author}</em>
+                                            {editIndex === index && <span className="readmore-icon" style={style}><FaArrowRight /></span>}
+                                        </div>
+                                        {/* {editIndex === index ? <div className="read-more">
                                             <p className="read-padding" style={style}>Read More</p>
                                             <p style={style}><FaArrowRight /></p>
-                                        </div> : null}
+                                        </div> : null} */}
                                     </div>
                                 </div>
                             </Link>
