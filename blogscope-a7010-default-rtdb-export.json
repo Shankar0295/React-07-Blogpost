@@ -1,0 +1,48 @@
+{
+  "blogpost" : {
+    "angvsreact" : {
+      "author" : "Shankar",
+      "content" : "There are so many articles titled “Angular vs React”, “React vs Angular”, “Angular or React” – it is a miracle you opened this one! What these articles are missing, however, is a precise side-by-side comparison of Angular vs React.\n\nSo this is what I am going to do in this blog post: to place React and Angular in direct juxtaposition. We're going to review and contrast the two JavaScript frameworks and look at each possible characteristic to make sure we don't miss even a single piece of data.\nIn the end, I am not going to tell you which technology to choose. But I will give you enough food for thought for you to choose the technology that suits you and your project best.\n\n1. Brief Overview\nReact\nReact is a JavaScript library for UI development. It is managed by Facebook and an open-source community of developers.\n\nThe framework was introduced in May 2013.\n\nThe latest updates were released on August 8th, 2019 – just over a month ago.\n\nAngular\nAngular is an open-sourced JavaScript framework for web and mobile development. It is TypeScript-based and managed by Google’s Angular Team and the Angular developer community.\n\nLaunched in September 2016, Angular (also known as Angular 2.0) is a complete rewrite of AngularJS (Angular 1.0), which was introduced in 2010.\n\nThere have been six versions of Angular already, and the latest release took place on August 28th, 2019 – almost three weeks ago.\n\nDisclaimer: This content was inspired from freecodecamp.org",
+      "imageName" : "ang-react",
+      "imageUrl" : "https://lh3.googleusercontent.com/sDfVv9OY3mwOsvQHORbkEelgSAuBmRf57X3RQ7h0Otosc3XszYU4LH4blcz5yrWKwTr24rGPrSNRJmrLRf-bjZ1NMsbb2jsHPFzNUwSLPUkXoSqfjtcH9vjpqRKKJTok0yBs2M8T7A=w2400",
+      "link" : "https://www.freecodecamp.org/news/angular-vs-react-what-to-choose-for-your-app-2/",
+      "slug" : "angvsreact",
+      "timeCreated" : "2022-03-23",
+      "timeDisplay" : "Wednesday, Mar 23, 2022",
+      "title" : "Angular vs React"
+    },
+    "fedroadmap" : {
+      "author" : "Shankar",
+      "content" : "Want to become a front-end developer? Do you know what tools, technologies and programming languages will be best for it? Today, we will help you out with all the questions you might have for building a career as a front-end developer. Please note that this roadmap is merely here to help you identify what you should learn next and understand the need for certain tools and frameworks.\n\nSo let’s start with the basics.\n\nHow To Become Front-End Web Developer in 2022\nA front-end developer is a person who develops the user interface of the website and applications. They are responsible for determining the structure and design of the web application, build features to improve user experience, make a balance between design and functionality, optimize web app for different devices, optimize pages for speed and scalability, use different markup languages for coding web pages, maintain brand consistency and write reusable codes. In simple terms, front-end development refers to the lines of code that determine the operation and structure of the user interface.\n\nHowever, the front-end web development is not just limited to using HTML, CSS or JS instead there are a bunch of other technologies that you need to learn if you wanna become a prominent developer this year.\n\nDisclaimer: This content was inspired from decipherzone",
+      "imageName" : "roadmap",
+      "imageUrl" : "https://lh3.googleusercontent.com/FiavvdBH1vq-hL5pL8cWV7Ph7LabhTl20FTZ9X6nehOlkkZBl7rkykj3iI0IDiEbqTjERAUY0kiSd4NoOY-7lE13X-PB3PSFDBUkuc_GojMSE4ILI_YKeaY8CTx_eRRhSZtc7OaHMQ=w2400",
+      "link" : "https://www.decipherzone.com/blog-detail/front-end-developer-roadmap-2021",
+      "slug" : "fedroadmap",
+      "timeCreated" : "2022-03-23",
+      "timeDisplay" : "Wednesday, Mar 23, 2022",
+      "title" : "Front End Dev Roadmap"
+    },
+    "localvssession" : {
+      "author" : "Shankar",
+      "content" : "Many of us have heard of Session Storage, Local Storage, and Cookies. But what exactly are they, what problems are they solving, and how are they different?\n\nCookies\nIn the beginning, the web used HTTP protocols to send messages (btw, SSL is more secure, you should use HTTPS instead of HTTP). These protocols are stateless protocols. In a stateless protocol, each request doesn't store any states, or \"persisting information\"; each request is its own island and it doesn't have idea about the other requests.\n\nLocal Storage and Session Storage\nLocal Storage and Session Storage are more similar than different. Most modern browsers should support Local Storage and Session Storage features. They are used to store data in the browser. They are accessible from the client-side only (web servers can't access them directly). Also since they are a front-end tool, they have no SSL support.\n\nUnlike Cookies where all Cookies (for that domain) are sent on each request, Local and Session Storage data aren't sent on each HTTP request. They just sit in your browser until someone requests it.\n\nDisclaimer : This content was inspired from dev.to",
+      "imageName" : "localvssession",
+      "imageUrl" : "https://lh3.googleusercontent.com/HNm4AJOSZEM1rzIxXSR59uOxQxo80MMhtTHhatBRuazY3BNBt4J6z6ef58I3etJwJcYYQ2ndIA67ik6wdB6x0zHzzConbyzJ5Hbm0mAPOZnZX2NqEAa5WI_5VeNbvD8vc2BAl1nEpQ=w2400",
+      "link" : "https://dev.to/iggredible/cookies-vs-local-storage-vs-session-storage-3gp3",
+      "slug" : "localvssession",
+      "timeCreated" : "2022-03-23",
+      "timeDisplay" : "Wednesday, Mar 23, 2022",
+      "title" : "Cookies vs Local Storage vs Session Storage"
+    },
+    "nodevspython" : {
+      "author" : "Shankar",
+      "content" : "In this article, we'll be bold and claim that one of these technologies is winning. The question is: which one is it? Let's jump on in and find out.\n\nBackground and overview\nNode.js and Python are among the most popular technologies for back-end development. Common knowledge holds that there are no better or worse programming languages, and that everything depends on each developer's preferences.\n\nYet, in this article, I am going to be brave and claim that one of these technologies – NodeJS or Python 3 – is winning. Which one will it be? Let’s see.\n\nDisclaimer: This content was inspired from freecodecamp.ORG",
+      "imageName" : "node-python",
+      "imageUrl" : "https://lh3.googleusercontent.com/4OLfU9mk5hUrBekyiTIQVa1Yv1KKVgHXAMP38auF_ajd92qQnVKnjkJRbmY6IUA3IqeL7b4v_aPQsZ_3vxJTdk7SeDCHBetu5bCv5OqyWWH6p0G1R1JkCeX0wuzvNiVh7avtIA9_kg=w2400",
+      "link" : "https://www.freecodecamp.org/news/nodejs-vs-python-choosing-the-best-technology-to-develop-back-end-of-your-web-app/",
+      "slug" : "nodevspython",
+      "timeCreated" : "2022-03-23",
+      "timeDisplay" : "Wednesday, Mar 23, 2022",
+      "title" : "NodeJS vs Python"
+    }
+  }
+}
